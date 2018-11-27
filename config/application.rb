@@ -31,7 +31,10 @@ module ApiTicTacToe
       fixtures: false,
       view_spec: false,
       helper_spec: false,
-      routing_spec: false
+      routing_spec: false,
+
+      # skip generation of migration files
+      g.orm :active_record, migraion: false
     end
 
     # Settings in config/environments/* take precedence over those specified here.
